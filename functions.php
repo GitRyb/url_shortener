@@ -6,12 +6,12 @@ function makeItShort (){
     $shortUrl = $firstHalf . $secondHalf;
     return $shortUrl;
 }
-
-function connectToDb () {  //you need to have 4 columns in the table `urls`: `id`, `url`, `short_url`, `count`
+//you need to have 4 columns in the table `urls`: `id`, `url`, `short_url`, `count`
+function connectToDb () {  
     $dbh = new \PDO(
     'mysql:host=localhost;dbname=dbname;',
-    'root',
-    ''
+    'login',
+    'password'
     );
     $dbh->exec('SET NAMES UTF8');
     return $dbh;
