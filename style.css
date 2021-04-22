@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+body {
+    background-color: #f6f4f2;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+.mx-auto {
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+.main-wp {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100vh;
+}
+.main {
+    background-color: #425664;
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+    padding: 56px;
+    margin: 24px auto;
+}
+h1 {
+    font-weight: normal;
+    margin: 0 0 32px;
+}
+form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+}
+button,
+input[type="text"],
+input[type="submit"] {
+    background-color: #2d3841;
+    color: #fff;
+    font-size: 12px;
+    font-stretch: 100%;
+    height: 48px;
+    border: none;
+    padding: 0 20px;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    -webkit-transition: .25s ease-in all;
+    -o-transition: .25s ease-in all;
+    transition: .25s ease-in all;
+}
+button:focus,
+input[type="text"]:focus,
+input[type="submit"]:focus {
+    outline: none;
+}
+input[type="text"]::-webkit-input-placeholder {
+    color: #fff;
+}
+input[type="text"]::-moz-placeholder {
+    color: #fff;
+}
+input[type="text"]:-ms-input-placeholder {
+    color: #fff;
+}
+input[type="text"]::-ms-input-placeholder {
+    color: #fff;
+}
+input[type="text"]::placeholder {
+    color: #fff;
+}
+input[type="text"]:focus {
+    color: #2d3841;
+    background-color: #fff;
+}
+input[type="text"]:focus::-webkit-input-placeholder {
+    color: #2d3841;
+}
+input[type="text"]:focus::-moz-placeholder {
+    color: #2d3841;
+}
+input[type="text"]:focus:-ms-input-placeholder {
+    color: #2d3841;
+}
+input[type="text"]:focus::-ms-input-placeholder {
+    color: #2d3841;
+}
+input[type="text"]:focus::placeholder {
+    color: #2d3841;
+}
+input[type="submit"],
+button#copy_btn {
+    max-width: -webkit-max-content;
+    max-width: -moz-max-content;
+    max-width: max-content;
+    margin-left: 4px;
+}
+input[type="submit"]:hover,
+button#copy_btn:hover {
+    opacity: .7;
+}
+input[type="submit"]:focus,
+button#copy_btn:focus {
+    background-color: #2d384154;
+}
+
+.info {
+    text-align: left;
+    margin-top: 12px;
+}
+
+.copied {
+    -webkit-animation: .7s ease-in-out go_green;
+            animation: .7s ease-in-out go_green;   
+}
+@-webkit-keyframes go_green {
+    50% {
+        background-color: #c6ad8f;
+        -webkit-transform: scale(1.1);
+                transform: scale(1.1);
+    }
+    100% {
+        background-color: #2d3841;
+        -webkit-transform: scale(1);
+                transform: scale(1);
+    }
+}
+@keyframes go_green {
+    50% {
+        background-color: #c6ad8f;
+        -webkit-transform: scale(1.1);
+                transform: scale(1.1);
+    }
+    100% {
+        background-color: #2d3841;
+        -webkit-transform: scale(1);
+                transform: scale(1);
+    }
+}
+
+@media(max-width: 575px) {
+    .main-wp {
+        display: block;
+        background-color: #425664;
+    }
+    .main {
+        width: auto;
+        text-align: left;
+        padding: 64px 32px 16px;
+        margin: 0;
+    }
+    input[type="text"] {
+        width: 100%;
+    }
+    input[type="submit"],
+    button#copy_btn {
+        margin-top: 4px;
+        margin-left: 0;
+    }
+    button#copy_btn + input[type="submit"] {
+        margin-left: 4px;
+    }
+}
